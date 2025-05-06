@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Recipe App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body id="body">
+    <div class="spinner" id="spinner">
+        <div></div>   
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+      </div>
+    <nav>
+        <h1>Ultimate Recipe App</h1>
+        <ul>
+            <button class="buttonN" id="x"><a href="index.html">Home</a></button>
+            <button class="buttonN"><a href="/recipe.html">Recipe</a></button>
+            <button class="buttonN"><a href="">Cuisine</a></button>
+            <button class="buttonN"><a href="">Random</a></button> 
+        </ul>
+    </nav>
+    <select id="options">
+        <option value="Indian">Indian</option>
+        <option value="American">American</option>
+        <option value="French">French</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Thai">Thai</option>
+        <option value="Chinese">Chinese</option>
+    </select>
+    <div class="container" id="container">
+    </div>
+    <div class="afterMenu" id="afterMenu">
+        <button id='backButton'>
+            <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+            <span>Back</span>
+          </button>
+        <div class="checklistContainer" id="check">
+            <div id="recipeInformation">
+            </div>
+            <div class="con">
+                <h1 id="tittle">Ingredients</h1>
+                <div id="checklist">
+                    <input checked="" value="1" name="r" type="checkbox" id="01">
+                    <label for="01">Bread</label>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="LoadMoreButton">
+        <span>Load More</span>
+    </button>
+
+</body>
+<script src="script.js"></script>
+</html>

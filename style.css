@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    --navHeight: 10vh;
+    --fullWidth: 100vw;
+}
+html {
+    scroll-behavior: smooth;
+   }
+  
+::-webkit-scrollbar {
+    display: none;
+}
+nav{
+    height: var(--navHeight);
+    width: var(--fullWidth);
+    background-color: transparent;
+    display: flex;
+    backdrop-filter: blur(2px);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    color: #04364A;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+nav ul{
+    list-style: none;
+    margin-right: 2rem;
+    display: flex;
+}
+.button{
+    font-size: 1rem;
+    margin: 1rem;
+    width: 6vw;
+    height: 4vh;
+}
+nav h1{
+    margin-left: 2rem;
+}
+.button a{
+    text-decoration: none;
+    color: #04364A;
+    transition: 240ms;
+    font-size: 1.1rem;
+}
+.button{
+    background-color: transparent;
+    outline: none;
+    height: 6vw;
+    height: 5vh;
+    border: none;
+}
+.button a:hover{
+    font-size: 1.2rem;
+    transition: 100ms;
+}
+.button a:focus{
+    font-size: 1rem;
+}
+.container{
+    background-image: url('./Another.jpg');
+    background-size: var(--fullWidth) 140vh;
+    height: 100vh;
+    width: var(--fullWidth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.texts{
+    text-align: center;
+    width: 40vw;
+    color: whitesmoke;
+}
+.texts h1{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.texts p{
+    font-size: 1.2rem;
+}
+
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  outline: none;
+  border: none;
+  margin: 1rem;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-12:disabled {
+  cursor: default;
+}
+
+.btn-12:-moz-focusring {
+  outline: auto;
+}
+
+.btn-12 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+  display: none;
+}
+
+.btn-12 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-12 span {
+  mix-blend-mode: difference;
+}
+
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(
+    90deg,
+    #fff 25%,
+    transparent 0,
+    transparent 50%,
+    #fff 0,
+    #fff 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #fff 0,
+    #fff 50%,
+    transparent 0,
+    transparent 75%,
+    #fff 0
+  );
+  z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+.container2{
+    height: 100vh;
+    width: var(--fullWidth);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.card {
+    width: 390px;
+    height: 80vh;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 30vh;
+    border-radius: 6px 6px 0 0;
+    transition: 300ms;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+
+.card .heading .text{
+    height: 35vh;
+    overflow: scroll;
+}
+.cards-con{
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+.container2 h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}

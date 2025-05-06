@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Ultimate Recipe App</h1>
+        <ul>
+            <button class="button" id="x"><a href="">Home</a></button>
+            <button class="button"><a href="/recipe.html">Recipe</a></button>
+            <button class="button"><a href="">Cuisine</a></button>
+            <button class="button"><a href="">Random</a></button> 
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="texts">
+            <h1>Ultimate Recipe's From Around The World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi, labore eveniet beatae laudantium facere odio. Reprehenderit alias architecto unde harum cum minima ipsa excepturi, eaque rerum? Beatae numquam quae dicta. Inventore, voluptates aliquam.</p>
+            <button class="btn-12" onclick="redirectRecipes()"><span>Recipe's</span></button>
+            <button class="btn-12"><span><a href="#container2" style="text-decoration: none; color: white;">Learn</a></span></button>
+        </div>
+    </div>
+    <div class="container2" id="container2">
+        <h1>More..</h1>
+        <div class="cards-con">
+            <div class="card">
+                <div class="card-image"><img src="PlateFood.jpg" class="card-image" alt="Plate Food"></div>
+                <div class="category"> Illustration </div>
+                <div class="heading">
+                    <div class="text">
+                        <p>When 5 p.m. rolls around and you haven’t given a single thought to what’s for dinner, the glowing sign in front of the burger joint down the street might be calling your name.</p>
+                        <br>
+                        <p>The history of fast food dates back almost a century, but the concept — and some of America’s most well-known fast food eateries — really took off during the 1940s and 50s. Today, it’s become such a staple of culture that as many as one in three Americans eat fast food every day....</p>
+                    </div>
+                    <a href="https://health.clevelandclinic.org/heres-how-fast-food-can-affect-your-body/" target="_blank">
+                        <button class="btn-12" style="border-radius: 10px !important;"><span>Read More...</span></button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="Chicken.avif" class="card-image" alt="Chicken bucket"></div>
+                <div class="category"> Illustration </div>
+                <div class="heading">
+                    <div class="text">
+                        <p>Chicken has well-documented health benefits, but different parts and preparation methods factor into how healthy your chicken-based meal turns out. Darker cuts like the thigh and drumstick contain higher caloric content than lighter cuts like the breast. Keeping the skin or frying chicken will also add saturated fat.</p>
+                        <br>
+                        <p>The lean protein in chicken is an excellent source of amino acids. Our bodies use amino acids to build muscle tissue, something that is particularly important as we age....</p>
+                    </div>
+                    <a href="https://www.webmd.com/diet/health-benefits-chicken" target="_blank">
+                        <button class="btn-12" style="border-radius: 10px !important;"><span>Read More...</span></button>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="Croissant.jpg" alt="cri" class="card-image"></div>
+                <div class="category"> Illustration </div>
+                <div class="heading">
+                    <div class="text">
+                        <p>Breakfast is often called ‘the most important meal of the day’, and for good reason. As the name suggests, breakfast breaks the overnight fasting period. It replenishes your supply of glucose to boost your energy levels and alertness, while also providing other essential nutrients required for good health.</p>
+                        <br>
+                        <p>Many studies have shown the health benefits of eating breakfast. It improves your energy levels and ability to concentrate in the short term, and can help with better weight management, reduced risk of type 2 diabetes and heart disease in the long term.</p>
+                    </div>
+                    <a href="https://www.betterhealth.vic.gov.au/health/healthyliving/breakfast" target="_blank">
+                        <button class="btn-12" style="border-radius: 10px !important;"><span>Read More...</span></button>
+                    </a>
+    
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+    let redirectRecipes = () => {
+        window.location = '/recipes'
+    }
+    let redirectCuisines = () => {
+        window.location = '/cuisines'
+    }
+</script>
+</html>
